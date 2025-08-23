@@ -1,8 +1,7 @@
-// @ts-nocheck
 "use client";
 
+// @ts-nocheck
 import { useState } from "react";
-import { AddressAutofill } from "@mapbox/search-js-react";
 
 interface LocationInputProps {
   value: string;
@@ -78,16 +77,14 @@ export function LocationInput({
         Location
       </label>
       <div className="relative">
-        <AddressAutofill accessToken={""}>
-          <input
-            type="text"
-            autoComplete="street-address"
-            value={value}
-            onChange={(e) => onChange(e.target.value)}
-            placeholder="Enter location or use pin"
-            className="w-full rounded-xl bg-zinc-900/50 border border-zinc-800 pl-4 pr-12 py-3.5 text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/40"
-          />
-        </AddressAutofill>
+        <input
+          type="text"
+          autoComplete="street-address"
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          placeholder="Enter location or use pin"
+          className="w-full rounded-xl bg-zinc-900/50 border border-zinc-800 pl-4 pr-12 py-3.5 text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500/40"
+        />
         <button
           type="button"
           onClick={getLocation}
