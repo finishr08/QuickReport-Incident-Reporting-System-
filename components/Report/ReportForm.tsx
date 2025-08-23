@@ -76,12 +76,14 @@ export function ReportForm({ onComplete }: ReportFormProps) {
   };
 
   const generateReportId = useCallback(() => {
-    const array = new Uint32Array(4);
-    window.crypto.getRandomValues(array);
-    return (
-      Date.now().toString(36) +
-      Array.from(array, (num) => num.toString(36)).join("")
-    ).slice(0, 16);
+    const timestamp = Date.now().toString();
+    const randomBytes = crypto.randomBytes(16).toString("hex");
+    const combinedString = `${timestamp}-${randomBytes}`;
+    return crypto
+      .createHash("sha256")
+      .update(combinedString)
+      .digest("hex")
+      .slice(0, 16);
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
