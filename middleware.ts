@@ -9,10 +9,9 @@ export default withAuth(
 
     if (
       req.nextUrl.pathname.startsWith("/dashboard") &&
-      !isAdmin &&
-      !isModerator
+      !(isAdmin || isModerator)
     ) {
-      return NextResponse.redirect(new URL("/auth/signin", req.url));
+      return NextResponse.redirect(new URL("/submit-report", req.url));
     }
   },
   {
