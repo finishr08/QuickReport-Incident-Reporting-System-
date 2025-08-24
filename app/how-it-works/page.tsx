@@ -1,4 +1,5 @@
 import { workFeatures, workProcessSteps } from "@/lib/data";
+import Link from "next/link";
 
 export default function HowItWorks() {
   return (
@@ -100,22 +101,24 @@ export default function HowItWorks() {
             <h2 className="text-2xl font-bold text-white mb-6">
               Ready to Make a Report?
             </h2>
-            <button className="group relative inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-sky-500 px-8 text-sm font-medium text-white transition-all hover:bg-sky-400">
-              Start Anonymous Report
-              <svg
-                className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M5 12h14M12 5l7 7-7 7"
-                />
-              </svg>
-            </button>
+            <Link href="/submit-report">
+              <button className="group relative inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-sky-500 px-8 text-sm font-medium text-white transition-all hover:bg-sky-400 cursor-pointer">
+                Start Anonymous Report
+                <svg
+                  className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M5 12h14M12 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </Link>
           </div>
         </div>
       </main>
