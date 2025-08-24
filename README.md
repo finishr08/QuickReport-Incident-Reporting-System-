@@ -12,7 +12,6 @@
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css" />
   <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma" />
   <img src="https://img.shields.io/badge/NextAuth.js-000000?style=for-the-badge&logo=nextauth" />
-  <img src="https://img.shields.io/badge/Gemini_AI-4285F4?style=for-the-badge&logo=google" />
 
 </div>
 
