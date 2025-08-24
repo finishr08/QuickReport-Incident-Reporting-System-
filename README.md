@@ -66,7 +66,7 @@ QuickReport is a full-stack incident reporting and tracking platform. It lets us
 - **Tailwind CSS:** [https://tailwindcss.com/](https://tailwindcss.com/)
 - **Prisma ORM:** [https://www.prisma.io/](https://www.prisma.io/)
 - **Next.js 15:** [https://nextjs.org/](https://nextjs.org/)
-- **Google Gemini AI:** [https://ai.google.dev/](https://ai.google.dev/)
+- **Gemini AI:** [https://ai.google.dev/](https://ai.google.dev/)
 - **Neon Database:** [https://neon.tech/](https://neon.tech/)
 
 ---
