@@ -53,7 +53,7 @@ export function ReportTracker() {
     <div className="w-full mt-8">
       {/* Header Section */}
       <div className="text-center mb-8">
-        <div className="inline-flex h-9 items-center gap-2 rounded-full border border-sky-500/20 bg-sky-500/10 px-4 text-sm text-sky-400">
+        <div className="inline-flex h-9 items-center gap-2 rounded-full border border-sky-500/20 bg-sky-500/10 px-4 text-sm text-sky-400 hover:bg-sky-400/15 cursor-pointer">
           <Search className="w-4 h-4" />
           Track Your Report Status
         </div>

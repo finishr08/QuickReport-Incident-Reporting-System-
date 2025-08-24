@@ -14,7 +14,7 @@ export default function SubmitReport() {
       <main className="relative px-6 pt-32">
         <div className="mx-auto max-w-3xl">
           <div className="flex flex-col items-center text-center">
-            <div className="inline-flex h-9 items-center gap-2 rounded-full border border-sky-500/20 bg-sky-500/10 px-4 text-sm text-sky-400">
+            <div className="inline-flex h-9 items-center gap-2 rounded-full border border-sky-500/20 bg-sky-500/10 px-4 text-sm text-sky-400 hover:bg-sky-400/15 cursor-pointer">
               <svg
                 className="h-4 w-4"
                 fill="none"

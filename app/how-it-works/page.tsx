@@ -14,7 +14,7 @@ export default function HowItWorks() {
         <div className="mx-auto max-w-5xl">
           {/* Header Section */}
           <div className="flex flex-col items-center text-center">
-            <div className="inline-flex h-9 items-center gap-2 rounded-full border border-sky-500/20 bg-sky-500/10 px-4 text-sm text-sky-400">
+            <div className="inline-flex h-9 items-center gap-2 rounded-full border border-sky-500/20 bg-sky-500/10 px-4 text-sm text-sky-400 hover:bg-sky-400/15 cursor-pointer">
               <svg
                 className="h-4 w-4"
                 fill="none"
@@ -34,7 +34,7 @@ export default function HowItWorks() {
             <h1 className="mt-8 bg-gradient-to-b from-white to-white/80 bg-clip-text text-5xl font-bold tracking-tight text-transparent">
               How SafeReport Works
               <span className="block text-2xl mt-4 bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">
-                Your Safety is Our Priority
+                Your Safety is Our First Priority
               </span>
             </h1>
 
